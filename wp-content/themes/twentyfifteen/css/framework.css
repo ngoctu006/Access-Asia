@@ -386,7 +386,7 @@ to 			{ -webkit-transform: rotate(360deg); }
 
 #nxs-content-container,
 #nxs-header,
-#nxs-content 												{ position: relative; }
+#nxs-content 												{ position: relative; background:#fff;}
 
 .nxs-main 													{ float: left; width: 652px; }
 .nxs-sidebar1 												{ float: right;	width: 308px; }
