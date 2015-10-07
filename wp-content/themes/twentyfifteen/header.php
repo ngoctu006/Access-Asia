@@ -87,7 +87,7 @@
                                                         <div class=" nxs-table " style=" min-height: 0px; height: 1px;">
                                                             <div class="wrapper nxs-applylinkvarcolor nxs-table-cell "><a class=" " style=" " target="" href="http://securitycompany.catalog.c1.us-e1.nexusthemes.com/">
                                                                     <div class="logo-image">
-                                                                        <img src="http://securitycompany.catalog.c1.us-e1.nexusthemes.com/wp-content/uploads/2015/02/logo.png?quality=100.3015072922390" class="nxs-maxheight-1-0   " style="float: left; margin-right: 15px; ">
+                                                                        <img src="http://securitycompany.catalog.c1.us-e1.nexusthemes.com/wp-content/uploads/2015/02/logo.png?quality=100.3015072922390" class="<?php if(is_home()){ echo 'nxs-maxheight-1-0'; }else{ echo 'nxs-maxheight-0-8'; } ?>" style="float: left; margin-right: 15px; ">
                                                                     </div></a>
                                                                 <div class="nxs-clear"></div>
                                                             </div> <!-- END wrapper -->
@@ -120,6 +120,7 @@
                 </div>
                 <div class="nxs-clear"></div>
             </div>
+            <?php if(is_home()): ?>
             <div id="nxs-supersized" class="nxs-sitewide-element nxs-containshovermenu1    remove-thumbnail-navigation has-height" style="height: 500px;">
 		  <div class="caption-aligner nxs-width50 nxs-center" style="height: 500px;">			
 			  <div id="slidecaption" class="nxs-placeholder " style=""><div class="slidecaption-container nxs-padding-1-0  nxs-colorzen nxs-colorzen-base2-a0-0  nxs-align-center "><h2 class="nxs-title nxs-head-fontsize-4-0   no-blink">Offering loss prevention</h2><div class="nxs-margin-bottom20"></div><div class="nxs-placeholder nxs-text-fontsize-2-0  "><div class="nxs-default-p nxs-padding-bottom0 no-blink"><p>to help protect merchants from criminality</p></div></div></div></div>
@@ -176,4 +177,5 @@
         
    
 </div>
+<?php endif; ?>
             <div id="nxs-content" class="nxs-sitewide-element nxs-widescreen nxs-colorzen nxs-colorzen-base1  nxs-linkcolorvar nxs-linkcolorvar-c22-m  nxs-padding-top-1-0  nxs-padding-bottom-1-0  nxs-border-top-width-1-0   ">

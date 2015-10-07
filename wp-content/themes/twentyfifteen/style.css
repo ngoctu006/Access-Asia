@@ -230,3 +230,57 @@ H4, #nxs-container #nxs-content-container H4 span {
 .nxs-border-width-0-0 {
     border-width: 0px;
 }
+.nxs-maxheight-0-8 {
+    max-height: 80px;
+}
+.nxs-image-wrapper img {
+    width: 100%;
+    display: block;
+}
+.nxs-icon-width-1-5 {
+    width: 120px;
+    height: 120px;
+}
+.nxs-linkcolorvar-c22-m .nxs-applylinkvarcolor a {
+    color: #BF2626;
+    text-shadow: none;
+}
+.nxs-button.nxs-button-scale-1-2 {
+    font-size: 14px;
+}
+.nxs-button-scale-1-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.nxs-button-scale-1-2 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.nxs-button.nxs-button-scale-2-0 {
+    font-size: 24px;
+}
+.nxs-padding-1-0 {
+    padding: 30px;
+}
+.nxs-button-scale-2-0 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nxs-colorzen .nxs-colorzen-c12 a {
+    color: black;
+    text-shadow: 1px 1px 1px white;
+}
+.nxs-icon-scale-1-0, .nxs-text .top-wrapper span.nxs-icon-scale-1-0 {
+    font-size: 32px;
+}
+.nxs-padding-0-3 {
+    padding: 9px;
+}
+H3, #nxs-container #nxs-content-container H3 span {
+    font-size: 24px;
+    line-height: 1.2em;
+}
+.nxs-button-scale-2-0 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
