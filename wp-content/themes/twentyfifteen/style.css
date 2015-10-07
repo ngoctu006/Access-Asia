@@ -27,7 +27,7 @@ body {
 }
 .nxs-colorzen .nxs-colorzen-c32 {
     border-color: #010607;
-    background-color: #0D4D61;
+    background-color: #000;
     background-repeat: no-repeat;
     background-image: none;
     background-image: none;
@@ -94,7 +94,7 @@ H5, #nxs-container #nxs-content-container H5 span {
 }
 .nxs-colorzen-c32 {
     border-color: #010607;
-    background-color: #0D4D61;
+    background-color: #000;
     background-repeat: no-repeat;
     background-image: none;
     background-image: none;
@@ -283,4 +283,12 @@ H3, #nxs-container #nxs-content-container H3 span {
 .nxs-button-scale-2-0 {
     padding-top: 12px;
     padding-bottom: 12px;
+}
+.nxs-button-scale-1-4 {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.nxs-button-scale-1-4 {
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
