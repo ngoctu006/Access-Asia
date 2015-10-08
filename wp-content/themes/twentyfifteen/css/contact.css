@@ -1,0 +1,35 @@
+#form_contact .error {
+    display: block;
+    color: red;
+}
+
+#form_contact .show-flash-msg span {
+    color: red;
+    font-size: 20px;
+    display: none;
+    font-family: Oswald, sans-serif
+}
+
+#form_contact .show-flash-msg {
+    margin-bottom: 10px;
+}
+
+#form_contact #overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+#form_contact #loading {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -28px 0 0 -25px;
+}

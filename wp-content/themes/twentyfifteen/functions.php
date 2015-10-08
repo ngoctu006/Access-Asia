@@ -354,4 +354,10 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 show_admin_bar(FALSE); 
-include __FILE__.'/option.php';
+
+/*
+ * Inclule mail library
+ */
+require get_template_directory() .'/vendor/autoload.php';
+require get_template_directory() .'/inc/sendmail.php';
+
