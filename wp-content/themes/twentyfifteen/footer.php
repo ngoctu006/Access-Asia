@@ -43,6 +43,16 @@
                                         <div id="nxs-widget-r1270444443" class="nxs-widget nxs-widget-r1270444443  nxs-menu ">
                                             <div class="nxs-menu-aligner nxs-applylinkvarcolor  right nxs-touched">
                                                 <!--Start Insert Top Menu -->
+                                                <?php 
+                                                        wp_nav_menu(array(
+                                                            'theme_location'=>'Footer Menu',
+                                                            'menu' => 'Footer menu',
+                                                            'container_id'=>'cssmenu',
+                                                            'menu_class' => 'ct-list-menu left header-menu footer-menu clear display720 ',
+                                                            
+                                                            'walker' => new CSS_Menu_Maker_Walker()
+                                                        ));
+                                                 ?>
                                                 <!--End Insert Bottom Menu -->
                                             </div> <!-- menu aligner -->
                                             <div class="nxs-clear"></div>

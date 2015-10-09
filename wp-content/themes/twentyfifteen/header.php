@@ -12,7 +12,7 @@
 <html <?php language_attributes(); ?> class="js nxs-m-js nxs-m-flexbox nxs-m-flexboxlegacy nxs-m-canvas nxs-m-canvastext nxs-m-webgl nxs-m-no-touch nxs-m-geolocation nxs-m-postmessage nxs-m-websqldatabase nxs-m-indexeddb nxs-m-hashchange nxs-m-history nxs-m-draganddrop nxs-m-websockets nxs-m-rgba nxs-m-hsla nxs-m-multiplebgs nxs-m-backgroundsize nxs-m-borderimage nxs-m-borderradius nxs-m-boxshadow nxs-m-textshadow nxs-m-opacity nxs-m-cssanimations nxs-m-csscolumns nxs-m-cssgradients nxs-m-cssreflections nxs-m-csstransforms nxs-m-csstransforms3d nxs-m-csstransitions nxs-m-fontface nxs-m-generatedcontent nxs-m-video nxs-m-audio nxs-m-localstorage nxs-m-sessionstorage nxs-m-webworkers nxs-m-applicationcache nxs-m-svg nxs-m-inlinesvg nxs-m-smil nxs-m-svgclippaths wf-oswald-n4-active wf-oswald-n3-active nxs-viewport-gt-319 nxs-viewport-gt-479 nxs-viewport-gt-719 nxs-viewport-gt-959 nxs-viewport-gt-1199 nxs-viewport-gt-1439 nxs-nontouchdevice nxs-vendor-webkit nxs-non-ie nxs-frontend nxs-site-responsive nxs-pageslider nxs-rows-nonresponsive wf-helvetica-n4-inactive wf-active nxs-viewport-is-1440 nxs-window-blur">
     <head>
         <meta charset="<?php bloginfo('charset'); ?>">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
         <!--[if lt IE 9]>
@@ -36,12 +36,12 @@
                                     <li class="nxs-placeholder nxs-containshovermenu1 nxs-runtime-autocellsize nxs-one-half nxs-margin-bottom-0-0  nxs-unistyle-main nxs-unistyled nxs-not-unicontented nxs-widgettype-social  nxs-column-1-2" style="height: 36px;"><div class="ABC nxs-height100 "><div class="XYZ "><div class="nxs-placeholder-content-wrap nxs-crop ">  <div id="nxs-widget-a1032436814" class="nxs-widget nxs-widget-a1032436814  nxs-social "><div class="nxs-clear"></div>
                                                         <div class="nxs-applylinkvarcolor ">	
                                                             <ul class="icon-font-list">
-                                                                <li><a target="_blank" href="dummy"><span class="nxs-icon-rss"></span></a></li>
+                                                                <!-- <li><a target="_blank" href="dummy"><span class="nxs-icon-rss"></span></a></li> -->
                                                                 <li><a target="_blank" href="dummy"><span class="nxs-icon-twitter-2"></span></a></li>
-                                                                <li><a target="_blank" href="dummy"><span class="nxs-icon-facebook"></span></a></li>
+                                                                <!-- <li><a target="_blank" href="dummy"><span class="nxs-icon-facebook"></span></a></li> -->
                                                                 <li><a target="_blank" href="dummy"><span class="nxs-icon-linkedin"></span></a></li>
-                                                                <li><a target="_blank" href="dummy"><span class="nxs-icon-google-plus"></span></a></li>
-                                                                <li><a target="_blank" href="dummy"><span class="nxs-icon-pinterest"></span></a></li>
+                                              <!--                   <li><a target="_blank" href="dummy"><span class="nxs-icon-google-plus"></span></a></li>
+                                                                <li><a target="_blank" href="dummy"><span class="nxs-icon-pinterest"></span></a></li> -->
                                                             </ul>
                                                         </div>
                                                         <div class="nxs-clear"></div>
@@ -52,7 +52,7 @@
                                     </li> 
                                     <li class="nxs-placeholder nxs-containshovermenu1 nxs-runtime-autocellsize nxs-one-half nxs-margin-bottom-0-0  nxs-unistyle-calltoactionheader nxs-unistyled nxs-not-unicontented nxs-widgettype-text  nxs-column-2-2 nxs-column-lastinrow" style="height: 36px;"><div class="ABC  "><div class="XYZ nxs-valign-middle " style="margin-top: 7px;"><div class="nxs-placeholder-content-wrap nxs-crop ">  <div id="nxs-widget-b1032436814" class="nxs-widget nxs-widget-b1032436814  nxs-text ">
                                                         <div class="top-wrapper nxs-border-width-1-0  ">
-                                                            <div class="nxs-table" style="margin-left: auto;"><span class="nxs-icon-phone nxs-icon-scale-0-5 "></span><div class="nxs-applylinkvarcolor"><h5 class="nxs-title nxs-align-right  nxs-heightiq nxs-heightiq-p1-title  nxs-fontzen nxs-fontzen-3  " style="height: 21px;">Call us at (123) 456-7890</h5></div>
+                                                            <div class="nxs-table" style="margin-left: auto;"><span class="nxs-icon-phone nxs-icon-scale-0-5 "></span><div class="nxs-applylinkvarcolor"><h5 class="nxs-title nxs-align-right  nxs-heightiq nxs-heightiq-p1-title  nxs-fontzen nxs-fontzen-3  " style="height: 40px;">Call us at (123) 456-7890</h5></div>
                                                             </div>
                                                         </div>
                                                         <div class="nxs-heightiq nxs-heightiq-p1-text" style="height: 0px;">
@@ -96,7 +96,22 @@
                                                     <div id="nxs-widget-r1065812194" class="nxs-widget nxs-widget-r1065812194  nxs-menu ">
                                                         <div class="nxs-menu-aligner nxs-applylinkvarcolor  right nxs-touched">
                                                             <!-- Insert Menu -->
-                                                            <!--Truong Anh Tuan insert menu vao day nha -->
+                                                            <div id="header-responsive-menu" class="responsive-display720 responsive-display480">
+                                                                
+                                                            </div>
+                                                            <?php
+                                                                wp_nav_menu(array(
+                                                                    'theme_location'=>'Primary Menu',
+                                                                    'menu' => 'Header menu',
+                                                                    'container_id'=>'cssmenu',
+                                                                    'menu_class' => 'ct-list-menu left header-menu clear display720 ',
+                                                                    
+                                                                    'walker' => new CSS_Menu_Maker_Walker()
+                                                                ));
+
+
+                                                            ?> 
+
                                                             <!-- End inser Menu -->
                                                         </div> <!-- menu aligner -->
                                                         <div class="nxs-clear"></div>
@@ -117,4 +132,4 @@
                 include __DIR__.'/templates/part_supersized.php'; 
             ?>
             <div id="nxs-content" class="nxs-sitewide-element nxs-widescreen nxs-colorzen nxs-colorzen-base1  nxs-linkcolorvar nxs-linkcolorvar-c22-m  nxs-padding-top-1-0  nxs-padding-bottom-1-0  nxs-border-top-width-1-0   ">
-
+            <link rel="stylesheet" href="<?php  echo get_template_directory_uri(); ?>/css/cssmenu/styles.css">

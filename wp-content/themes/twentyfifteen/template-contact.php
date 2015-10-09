@@ -41,7 +41,7 @@ get_header();
                                         <div id="nxs-widget-l1103379832" class="nxs-widget nxs-widget-l1103379832  nxs-text ">
                                             <div class="nxs-default-p nxs-applylinkvarcolor nxs-padding-bottom0 nxs-align-center  ">
                                                 <p>
-                                                    Praesent in lectus bibendum, consequat diam in, scelerisque lectus.&nbsp;
+                                                    <!-- Praesent in lectus bibendum, consequat diam in, scelerisque lectus.&nbsp; -->
                                                 </p>
                                             </div>
                                             <div class="nxs-clear"></div>
@@ -62,6 +62,7 @@ get_header();
                                     <div class="nxs-placeholder-content-wrap nxs-crop ">
                                         <div id="nxs-widget-l1072782605" class="nxs-widget nxs-widget-l1072782605  nxs-google-map">	
                                             <div id="map_canvas" class="nxs-runtime-autocellsize nxs-minheight nxs-minheight-360-0 " style="height: 360px; position: relative; overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);">
+                                                <?php the_post_thumbnail('large' ); ?>
                                                 
                                             </div>
                                         </div>
@@ -87,17 +88,16 @@ get_header();
                                             <div class="nxs-clear nxs-filler"></div>
                                             <div class="nxs-heightiq nxs-heightiq-p1-text" style="height: 280px;">
                                                 <div class="nxs-default-p nxs-applylinkvarcolor nxs-padding-bottom0 nxs-align-left  ">
-                                                    <p style="text-align: left;">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-                                                    </p>
-                                                    <p style="text-align: left;"><strong>Address<br>
-                                                        </strong>3511 Shady Brook Dr, Augusta, GA 12345<br>
-                                                        Tel:&nbsp;(123) 456-7890<br>
-                                                        Email:&nbsp;info@access-asia.org
-                                                    </p>
+                                            <?php if (have_posts()) : ?>
+                                                <?php while (have_posts()) : the_post(); ?>
+                                                    <?php the_content(); ?>
+                                                <?php endwhile; ?>
+                                            <?php endif; ?>
                                                 </div>
                                                 <div class="nxs-clear nxs-filler"></div>
                                                 <p class="nxs-align-left  nxs-padding-bottom0">
-                                                    <a target="_blank" class="nxs-button nxs-button-scale-1-2  nxs-colorzen nxs-colorzen-c22  " href="https://www.google.com/maps/place/3511+Shady+Brook+Dr/@33.387229,-82.040023,17z/data=!3m1!4b1!4m2!3m1!1s0x88f9cfdf9d2b74b7:0x4bdbdc00298e7ccb">Route planner</a></p>
+                                                    
+                                                    </p>
                                                 <div class="nxs-clear"></div>
                                             </div>
                                         </div> 
@@ -115,6 +115,7 @@ get_header();
                                                 <span>Test</span>
                                             </div>
                                             <h2 class="nxs-title nxs-align-left   ">Send us a message</h2><div class="nxs-clear nxs-filler"></div><div class="nxs-text nxs-default-p nxs-applylinkvarcolor nxs-padding-bottom0  "></div><div class="nxs-form">  
+                                                <p>All enquiries are welcome. Please send us a message and we'll respond to you within 24 hours.</p><br>
                                                 <label class="field_name">Name*</label>
                                                 <input type="text" id="nxs_cf_79_r1136517441_bjooub" name="name" class="field_name nxs-colorzen nxs-colorzen-c12-a0-8 invalidcontent" value="" placeholder="">
                                                 <label class="field_name">E-mail</label>
@@ -177,12 +178,12 @@ get_header();
                         over.remove();
                         var status = data.status;
                         if(status == '1'){
-                            jQuery("#form_contact .show-flash-msg span").show().html('Something maybe wrong, please resend again!').fadeOut(5000)
+                            jQuery("#form_contact .show-flash-msg span").show().html('Your message was not sent. Please make sure all the fields were filled properly').fadeOut(5000)
                         }else if(status == '2'){
-                            jQuery("#form_contact .show-flash-msg span").show().html('Something maybe wrong, please resend again!').fadeOut(5000)
+                            jQuery("#form_contact .show-flash-msg span").show().html('Your message was not sent. Please make sure all the fields were filled properly').fadeOut(5000)
                         }else if(status == '0'){
                             jQuery("#form_contact .show-flash-msg span").show()
-                                .html('Thanks for contact with us!')
+                                .html('Your message was sent successfully. One of our directors will get back to you shortly.')
                                 .css('color', '#BF2626')
                                 .fadeOut(5000, function(){
                                     window.location.href=window.location.href;
@@ -190,12 +191,12 @@ get_header();
                             jQuery("#form_contact").find('input,textarea').val('');
 
                         }else{
-                            jQuery("#form_contact .show-flash-msg span").show().html('Something maybe wrong, please resend again!').fadeOut(5000)
+                            jQuery("#form_contact .show-flash-msg span").show().html('Your message was not sent. Please make sure all the fields were filled properly').fadeOut(5000)
                         }
                     },
                     error: function() {
                         over.remove();
-                        jQuery("#form_contact .show-flash-msg span").show().html('Something maybe wrong, please resend again!').fadeOut(5000)
+                        jQuery("#form_contact .show-flash-msg span").show().html('Your message was not sent. Please make sure all the fields were filled properly').fadeOut(5000)
                     },
                     complete : function(){
                         over.remove();
@@ -207,23 +208,6 @@ get_header();
     });
 </script>
 
-<script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAueHED3I93ElSs0H9AQRYtJvmdN9SboU&callback=initMap">
-</script>
 
-<script type="text/javascript">
-    function initMap(){
-        var myLatLng = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map_canvas'), {
-                          center: myLatLng,
-                          zoom: 12
-                        });
-        var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            title: 'Hello World!'
-          });
-    }
-</script>
 
 <?php get_footer(); ?>

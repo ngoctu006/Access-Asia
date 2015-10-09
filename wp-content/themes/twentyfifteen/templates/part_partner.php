@@ -60,6 +60,7 @@
                                         <?php 
                                             the_content();
                                         ?>
+
                                     </div>
                                     <p class="nxs-align-right nxs-padding-bottom0">
                                         <a class="nxs-button nxs-button-scale-1-2  nxs-colorzen nxs-colorzen-c22 " href="<?php the_permalink() ?>"><?php _e('Read more'); ?></a>
