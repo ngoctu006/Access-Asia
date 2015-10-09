@@ -292,3 +292,23 @@ H3, #nxs-container #nxs-content-container H3 span {
     padding-top: 8px;
     padding-bottom: 8px;
 }
+.wrap-new{
+    padding-bottom: 30px;
+}
+.padding-25{
+    padding:0 25px;
+}
+.justify{
+    text-align: justify;
+}
+.nxs-button.nxs-button-scale-1-6 {
+    font-size: 19px;
+}
+.nxs-button-scale-1-6 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.nxs-button-scale-1-6 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

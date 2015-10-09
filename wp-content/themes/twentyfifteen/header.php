@@ -18,13 +18,11 @@
         <!--[if lt IE 9]>
         <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/html5.js"></script>
         <![endif]-->
-        <link rel='stylesheet' id='twentyfifteen-style-css'  href='http://asia.local/wp-content/themes/twentyfifteen/css/css-reset.css' type='text/css' media='all' />
-        <link rel='stylesheet' id='twentyfifteen-style-css'  href='http://asia.local/wp-content/themes/twentyfifteen/css/framework.css' type='text/css' media='all' />
-        <link rel='stylesheet' id='twentyfifteen-style-css'  href='http://asia.local/wp-content/themes/twentyfifteen/css/framework-responsive.css' type='text/css' media='all' />    
+        <link rel='stylesheet' id='twentyfifteen-style-css'  href='<?php echo get_template_directory_uri(); ?>/css/css-reset.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='twentyfifteen-style-css'  href='<?php echo get_template_directory_uri(); ?>/css/framework.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='twentyfifteen-style-css'  href='<?php echo get_template_directory_uri(); ?>/css/framework-responsive.css' type='text/css' media='all' />    
         <?php wp_head(); ?>
-
     </head>
-
     <body <?php body_class(); ?>>
         <div id="nxs-container" class="nxs-containsimmediatehovermenu nxs-no-click-propagation">
             <!-- start header -->
@@ -58,36 +56,30 @@
                                                             </div>
                                                         </div>
                                                         <div class="nxs-heightiq nxs-heightiq-p1-text" style="height: 0px;">
-                                                            <div class="nxs-clear">
-
-                                                            </div>
-
+                                                            <div class="nxs-clear"> </div>
                                                         </div>
-
                                                     </div> 
                                                 </div>
-
                                             </div>
-
                                         </div>
                                     </li>
                                 </ul>
                                 <div class="nxs-clear"></div>
-
                             </div> <!-- nxs-row-container -->
                         </div>
                         <div class="nxs-row nxs-not-unistyled nxs-colorzen nxs-colorzen-base1  nxs-padding-top-1-0  nxs-padding-bottom-0-0   nxs-rowtemplate-1third2third  " id="nxs-pagerow-prid1299489909">
                             <div class="nxs-row-container nxs-containsimmediatehovermenu nxs-row1">
                                 <ul class="nxs-placeholder-list"> 
-                                    <li class="nxs-placeholder nxs-containshovermenu1 nxs-runtime-autocellsize nxs-one-third nxs-margin-bottom-1-0  nxs-unistyle-main nxs-unistyled nxs-not-unicontented nxs-widgettype-logo  nxs-column-1-2" style="height: 100px;">
+                                    <li class="nxs-placeholder nxs-containshovermenu1 nxs-runtime-autocellsize nxs-one-third nxs-margin-bottom-1-0  nxs-unistyle-main nxs-unistyled nxs-not-unicontented nxs-widgettype-logo  nxs-column-1-2">
                                         <div class="ABC  ">
-                                            <div class="XYZ nxs-valign-middle " style="margin-top: 0px;">
+                                            <div class="XYZ nxs-valign-middle ">
                                                 <div class="nxs-placeholder-content-wrap nxs-crop ">  
                                                     <div id="nxs-widget-l1065812194" class="nxs-widget nxs-widget-l1065812194  nxs-logo ">	
-                                                        <div class=" nxs-table " style=" min-height: 0px; height: 1px;">
-                                                            <div class="wrapper nxs-applylinkvarcolor nxs-table-cell "><a class=" " style=" " target="" href="http://securitycompany.catalog.c1.us-e1.nexusthemes.com/">
+                                                        <div class=" nxs-table ">
+                                                            <div class="wrapper nxs-applylinkvarcolor nxs-table-cell ">
+                                                                <a class=" " style=" " target="" href="<?php echo home_url(); ?>">
                                                                     <div class="logo-image">
-                                                                        <img src="http://securitycompany.catalog.c1.us-e1.nexusthemes.com/wp-content/uploads/2015/02/logo.png?quality=100.3015072922390" class="<?php if(is_home()){ echo 'nxs-maxheight-1-0'; }else{ echo 'nxs-maxheight-0-8'; } ?>" style="float: left; margin-right: 15px; ">
+                                                                        <img src="<?php echo get_option('twentyfifteen')['gb_logo_image'] ?>" class="<?php if(is_home()){ echo 'nxs-maxheight-1-0'; }else{ echo 'nxs-maxheight-0-8'; } ?>" style="float: left; margin-right: 15px; ">
                                                                     </div></a>
                                                                 <div class="nxs-clear"></div>
                                                             </div> <!-- END wrapper -->
@@ -104,6 +96,7 @@
                                                     <div id="nxs-widget-r1065812194" class="nxs-widget nxs-widget-r1065812194  nxs-menu ">
                                                         <div class="nxs-menu-aligner nxs-applylinkvarcolor  right nxs-touched">
                                                             <!-- Insert Menu -->
+                                                            <!--Truong Anh Tuan insert menu vao day nha -->
                                                             <!-- End inser Menu -->
                                                         </div> <!-- menu aligner -->
                                                         <div class="nxs-clear"></div>

@@ -103,5 +103,6 @@ foreach ($list_child as $key => $value) {
                 </div>';
     }
 }
+wp_reset_postdata();
 ?>
 <!-- start Loop -->

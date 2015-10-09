@@ -9,52 +9,23 @@
  * @since Twenty Fifteen 1.0
  */
 ?>
+<div class="nxs-blogentry nxs-relative ">
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php
-		// Post thumbnail.
-		twentyfifteen_post_thumbnail();
-	?>
+    <div class="sharecounters">
+    </div>
 
-	<header class="entry-header">
-		<?php
-			if ( is_single() ) :
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			else :
-				the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
-			endif;
-		?>
-	</header><!-- .entry-header -->
+    <div class="info-wrapper">
+        <h3 class="nxs-title nxs-applylinkvarcolor  ">
+            <a href="../aenean-fermentum/index.html">Aenean fermentum</a>
+        </h3><div class="nxs-applylinkvarcolor"><div class="nxs-blog-meta">May 3, 2013</div><div class="nxs-blog-sharing"></div><div class="nxs-clear"></div></div>
 
-	<div class="entry-content">
-		<?php
-			/* translators: %s: Name of current post */
-			the_content( sprintf(
-				__( 'Continue reading %s', 'twentyfifteen' ),
-				the_title( '<span class="screen-reader-text">', '</span>', false )
-			) );
+    </div> 
+    <div class="nxs-relative">
+        <a href="../aenean-fermentum/index.html">
+            <div class="nxs-image-wrapper  nxs-icon-width-1-5  ">
+                <div style="right: 0; left: 0; top: 0; bottom: 0; border-style: solid;" class="nxs-overflow nxs-border-width-0-0 "><img class=" " src="../wp-content/uploads/2015/01/article5-200x2003cdc.jpg?quality=100.3015072922390" alt="Aenean fermentum" title="Aenean fermentum"></div></div></a></div><p class="nxs-default-p nxs-padding-bottom0 "><span>Cras vel dolor magna. Nulla pellentesque, elit non gravida tempor, lacus nisl rutrum ipsum, eu convallis odio lorem non nunc. Nam dictum lorem in arcu tempus, vitae gravida metus tempor. Aenean consectetur, tortor nec imperdiet tincidunt, neque quam porta augue, et placerat nisl tellus in nulla. Vestibulum eu consequat nisl. Morbi faucibus nec nunc at ullamcorper. Suspendisse purus leo, gravida et[...]</span></p>
+    <p class="nxs-align-right nxs-padding-bottom0">
+        <a class="nxs-button nxs-button-scale-1-2  nxs-colorzen nxs-colorzen-c22 " href="../aenean-fermentum/index.html">Read more</a>
+    </p><div class="nxs-clear nxs-padding-top20"></div>
 
-			wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
-				'after'       => '</div>',
-				'link_before' => '<span>',
-				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>%',
-				'separator'   => '<span class="screen-reader-text">, </span>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<?php
-		// Author bio.
-		if ( is_single() && get_the_author_meta( 'description' ) ) :
-			get_template_part( 'author-bio' );
-		endif;
-	?>
-
-	<footer class="entry-footer">
-		<?php twentyfifteen_entry_meta(); ?>
-		<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
-
-</article><!-- #post-## -->
+</div>
