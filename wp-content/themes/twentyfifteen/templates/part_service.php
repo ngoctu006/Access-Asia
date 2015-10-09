@@ -62,7 +62,7 @@ foreach ($list_child as $key => $value) {
                             <div class="image" style="background: url(<?php echo $image_url[0] ?>) no-repeat top center;height: 200px;"></div>
                             <div class="mask-color nxs-colorzen nxs-colorzen-c32 " >
                                 <div class="mask-container nxs-default-p nxs-padding-bottom0">
-                                    <p class="nxs-default-p nxs-applylinkvarcolor nxs-padding-bottom0 ">Praesent in lectus bibendum, consequat diam in, scelerisque lectus. </p>
+                                    <p class="nxs-default-p nxs-applylinkvarcolor nxs-padding-bottom0 "><?php the_field('short_description', $value->ID); ?> </p>
                                     <div class="nxs-clear nxs-padding-bottom10"></div>
                                     <p class=" nxs-padding-bottom0">
                                         <a target="_self" class="nxs-button nxs-button-scale-1-2  nxs-colorzen nxs-colorzen-c22  " href="<?php echo $value->guid;   ?>"><?php _e('Learn more'); ?></a>
@@ -91,7 +91,7 @@ foreach ($list_child as $key => $value) {
                                 </div>
                                 <div class="nxs-clear nxs-filler"></div>
                                 <p class="nxs-default-p nxs-applylinkvarcolor nxs-padding-bottom0  nxs-heightiq nxs-heightiq-p1-text " style="height: 0px;">
-                                    Praesent in lectus bibendum, consequat diam in, scelerisque lectus. </p>
+                                    <?php the_field('short_description', $value->ID); ?> </p>
                                 <div class="nxs-clear nxs-filler"></div>
                                 <p class=" nxs-padding-bottom0">
                                     <a target="_self" class="nxs-button nxs-button-scale-1-2  nxs-colorzen nxs-colorzen-c22  " href="<?php echo $value->guid; ?>"><?php _e('Learn more'); ?></a>
