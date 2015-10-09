@@ -41,6 +41,8 @@ $list_child = get_page_children($page_data->ID, $all_wp_pages);
 <?php
 $i = 0;
 foreach ($list_child as $key => $value) {
+    $image_id = get_post_thumbnail_id($value->ID);
+    $image_url = wp_get_attachment_image_src($image_id, 'full', true);
     if ($i == 0) {
         echo '<div class="nxs-row nxs-not-unistyled  nxs-rowtemplate-131313  " id="nxs-pagerow-prid1006544928">
                     <div class="nxs-row-container nxs-containsimmediatehovermenu nxs-row1">
@@ -54,13 +56,17 @@ foreach ($list_child as $key => $value) {
                     <div id="nxs-widget-a1214080472" class="nxs-widget nxs-widget-a1214080472  nxs-signpost ">  
                         <!-- DEFAULT SCENARIO -->
                         <div class="transition nxs-default" style="height: 200px;box-shadow: none;">
-                            <a target="_self" href="uniformed-security/index.html">
+                            <a target="_self" href="<?php echo $value->guid; ?>">
                                 <div class="border nxs-border-width-0-0 ">  </div>
                             </a>
-                            <div class="image" style="background: url(images/guard3cdc.jpg?quality=100.3015072922390) no-repeat top center;height: 200px;"></div>
+                            <div class="image" style="background: url(<?php echo $image_url[0] ?>) no-repeat top center;height: 200px;"></div>
                             <div class="mask-color nxs-colorzen nxs-colorzen-c32 " >
                                 <div class="mask-container nxs-default-p nxs-padding-bottom0">
-                                    <p class="nxs-default-p nxs-applylinkvarcolor nxs-padding-bottom0 ">Praesent in lectus bibendum, consequat diam in, scelerisque lectus. </p><div class="nxs-clear nxs-padding-bottom10"></div><p class=" nxs-padding-bottom0"><a target="_self" class="nxs-button nxs-button-scale-1-2  nxs-colorzen nxs-colorzen-c22  " href="uniformed-security/index.html">Learn more</a></p>
+                                    <p class="nxs-default-p nxs-applylinkvarcolor nxs-padding-bottom0 ">Praesent in lectus bibendum, consequat diam in, scelerisque lectus. </p>
+                                    <div class="nxs-clear nxs-padding-bottom10"></div>
+                                    <p class=" nxs-padding-bottom0">
+                                        <a target="_self" class="nxs-button nxs-button-scale-1-2  nxs-colorzen nxs-colorzen-c22  " href="<?php echo $value->guid;   ?>"><?php _e('Learn more'); ?></a>
+                                    </p>
                                 </div>
                             </div> 
                             <div class="mask" >
@@ -75,16 +81,21 @@ foreach ($list_child as $key => $value) {
                                 <h4 class="nxs-title  nxs-heightiq nxs-heightiq-p1-title " style="height: 0px;"><?php echo $value->post_title; ?></h4>
                                 <div class="nxs-clear nxs-filler"></div>
                                 <div class="nxs-relative">
-                                    <a href="uniformed-security/index.html">
+                                    <a href="<?php echo $value->guid; ?>">
                                         <div class="nxs-image-wrapper nxs-shadow nxs-stretch  ">
                                             <div class="nxs-overflow nxs-border-width-0-0 ">
-                                                <img class=" " src="images/guard3cdc.jpg?quality=100.3015072922390">
+                                                <img class="" src="<?php echo $image_url[0] ?>">
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="nxs-clear nxs-filler"></div>
-                                <p class="nxs-default-p nxs-applylinkvarcolor nxs-padding-bottom0  nxs-heightiq nxs-heightiq-p1-text " style="height: 0px;">Praesent in lectus bibendum, consequat diam in, scelerisque lectus. </p><div class="nxs-clear nxs-filler"></div><p class=" nxs-padding-bottom0"><a target="_self" class="nxs-button nxs-button-scale-1-2  nxs-colorzen nxs-colorzen-c22  " href="uniformed-security/index.html">Learn more</a></p>
+                                <p class="nxs-default-p nxs-applylinkvarcolor nxs-padding-bottom0  nxs-heightiq nxs-heightiq-p1-text " style="height: 0px;">
+                                    Praesent in lectus bibendum, consequat diam in, scelerisque lectus. </p>
+                                <div class="nxs-clear nxs-filler"></div>
+                                <p class=" nxs-padding-bottom0">
+                                    <a target="_self" class="nxs-button nxs-button-scale-1-2  nxs-colorzen nxs-colorzen-c22  " href="<?php echo $value->guid; ?>"><?php _e('Learn more'); ?></a>
+                                </p>
                             </div>
                             <div class="nxs-clear"></div>
                         </div> <!-- END fallback --> 
