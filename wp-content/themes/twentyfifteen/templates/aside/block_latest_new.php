@@ -7,13 +7,28 @@
                         <div class="nxs-placeholder-content-wrap nxs-crop ">  
                             <div id="nxs-widget-l1310014354" class="nxs-widget nxs-widget-l1310014354  nxs-blog ">
                                 <div class="nxs-blog-minimal nxs-blogentries nxs-paging-page-0 default">
-                                    <h2 class="nxs-title  nxs-align-left   ">Latest News</h2>
+                                    <h2 class="nxs-title  nxs-align-left"><?php _e('Latest News'); ?></h2>
                                     <div class="nxs-clear nxs-filler"></div>
                                     <ul>
-                                        <li class="nxs-applylinkvarcolor nxs-default-p nxs-padding-bottom0 nxs-padding-left20">
-                                            <span class="nxs-icon-text  font-icon"></span>
-                                            <a href="../pellentesque-habitant-morbi-tristique-senectus/index.html"><span>Pellentesque habitant morbi tristique senectus</span></a>
-                                        </li>
+                                        <?php
+                                        $args = array(
+                                            'posts_per_page' => 5,
+                                            'offset' => 0,
+                                            'orderby' => 'date',
+                                            'order' => 'DESC',
+                                            'post_type' => 'post',
+                                            'post_status' => 'publish',
+                                            'suppress_filters' => true
+                                        );
+                                        $new_post = new Wp_Query($args);
+                                        while ($new_post->have_posts()) {
+                                            $new_post->the_post();
+                                            ?>
+                                            <li class="nxs-applylinkvarcolor nxs-default-p nxs-padding-bottom0 nxs-padding-left20">
+                                                <span class="nxs-icon-text  font-icon"></span>
+                                                <a href="<?php the_permalink(); ?>"><span><?php the_title(); ?></span></a>
+                                            </li>
+                                        <?php } wp_reset_postdata(); ?>
                                     </ul>
                                 </div>
                                 <p class=" nxs-padding-bottom0"></p>
