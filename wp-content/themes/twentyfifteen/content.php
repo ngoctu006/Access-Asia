@@ -8,8 +8,11 @@
  * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0
  */
-    $image_id = get_post_thumbnail_id($value->ID);
-    $image_url = wp_get_attachment_image_src($image_id, 'full', true);
+if(has_post_thumbnail()){
+    $image_id = get_post_thumbnail_id();
+    $image_url = wp_get_attachment_image_src($image_id, 'full', true); 
+}
+
 ?>
 <div class="nxs-blogentry nxs-relative ">
     <div class="sharecounters"></div>
@@ -31,7 +34,7 @@
         <a href="<?php the_permalink() ?>">
             <div class="nxs-image-wrapper  nxs-icon-width-1-5  ">
                 <div class="nxs-overflow nxs-border-width-0-0 ">
-                    <?php if($image_url){ ?>
+                    <?php if(isset($image_url)){ ?>
                         <img class=" " src="<?php echo $image_url[0]; ?>" alt="<?php the_title() ?>" title="<?php the_title() ?>">
                     <?php } ?>
                 </div>
