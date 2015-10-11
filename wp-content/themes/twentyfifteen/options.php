@@ -158,6 +158,31 @@ function optionsframework_options() {
         'type' => 'text');
 
     $options[] = array(
+        'name' => __('Email contact', 'options_check'),
+        'desc' => __('Email used to sent contact', 'options_check'),
+        'id' => 'gb_email_contact_number',
+        'std' => '',
+        'type' => 'text');
+    $options[] = array(
+        'name' => __('Password email contact', 'options_check'),
+        'desc' => __('Password email used to sent contact', 'options_check'),
+        'id' => 'gb_pass_email_contact_number',
+        'std' => '',
+        'type' => 'password');
+    $options[] = array(
+        'name' => __('DNS Email contact', 'options_check'),
+        'desc' => __('DNS Email used to sent contact', 'options_check'),
+        'id' => 'gb_dnc_email_contact_number',
+        'std' => '',
+        'type' => 'text');
+    $options[] = array(
+        'name' => __('Port Email contact', 'options_check'),
+        'desc' => __('Port Email used to sent contact', 'options_check'),
+        'id' => 'gb_port_email_contact_number',
+        'std' => '',
+        'type' => 'text');
+
+    $options[] = array(
         'name' => __(' ', 'options_check'),
         'desc' => __(' ', 'options_check'),
         'type' => 'info');
