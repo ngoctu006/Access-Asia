@@ -3238,3 +3238,7 @@ span.reviewer 															{ margin-left: 5px; }
 .top-wrapper .nxs-fontzen-3{
 	font-family: Arial, Arial, Helvetica, sans-serif 
 }
+.ns-img-responsive img{
+	width : 100%;
+	height : auto;
+}
