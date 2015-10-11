@@ -93,6 +93,7 @@
 #cssmenu {
     font-size: 13px;
     /*margin-left: 40px*/
+    float : right;
 }
 
 #cssmenu > ul {
