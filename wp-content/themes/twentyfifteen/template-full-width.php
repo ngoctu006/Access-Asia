@@ -15,7 +15,7 @@ get_header();
                                 <div class="XYZ ">
                                     <div class="nxs-placeholder-content-wrap nxs-crop "> 
                                         <div id="nxs-widget-l1114342273" class="nxs-widget nxs-widget-l1114342273  nxs-wordpress-title">
-                                            <h1 class="nxs-title nxs-align-center  nxs-head-fontsize-3-0  ">Values</h1>
+                                            <h1 class="nxs-title nxs-align-center  nxs-head-fontsize-3-0  "><?php the_title( ); ?></h1>
                                             <div class="nxs-clear"></div>
                                         </div> 
                                     </div>
@@ -40,7 +40,17 @@ get_header();
                                     <div class="nxs-placeholder-content-wrap nxs-crop "> 
                                         <div id="nxs-widget-l1358719632" class="nxs-widget nxs-widget-l1358719632  nxs-text ">
                                             <div class="nxs-default-p nxs-applylinkvarcolor nxs-padding-bottom0 nxs-align-center  "><p>
-                                                <p>Content</p>
+                                                       <p><?php
+                                                        // Start the loop.
+                                                        while ( have_posts() ) : the_post();
+
+                                                            // Include the page content template.
+                                                            echo get_the_content( );
+
+                                                        // End the loop.
+                                                        endwhile;
+                                                        ?>
+                                                    </p>
                                             </div>
                                             <div class="nxs-clear"></div>
                                         </div> 
